@@ -111,8 +111,6 @@ public class MainWindow {
     centerPanel.add(leftPanel);
 
     leftTextArea = new JTextArea();
-    leftTextArea.setToolTipText(
-        "Input data textbox in which data have to be separated by ; symbol\r\n");
     leftTextArea.setFont(new Font("Tahoma", Font.PLAIN, 20));
     leftScrollPane.setViewportView(leftTextArea);
 
@@ -131,8 +129,6 @@ public class MainWindow {
     centerPanel.add(rightPanel);
 
     rightTextArea = new JTextArea();
-    rightTextArea.setToolTipText(
-        "Output data textbox in which result will be placed by 'run' button's click action");
     rightTextArea.setFont(new Font("Tahoma", Font.PLAIN, 20));
     rightScrollPane.setViewportView(rightTextArea);
 
@@ -142,8 +138,6 @@ public class MainWindow {
 
     runButton = new JButton("Run");
     runButton.setMnemonic('R');
-    runButton.setToolTipText(
-        "Run button is to generate output data, by inserting input data into the formula");
 
     runButton.addActionListener(
         new ActionListener() {
